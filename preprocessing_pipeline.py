@@ -35,8 +35,8 @@ def preprocess_data(data):
 
 # Define numerical and categorical features
 numerical_features = ['GrLivArea', 'HouseAge']
-categorical_features_onehot = ['Neighborhood']
-categorical_features_ordinal = ['OverallQual', 'MSSubClassMapped']
+categorical_features_onehot = ['Neighborhood', 'MSSubClassMapped']
+categorical_features_ordinal = ['OverallQual']
 
 # Define transformers
 numerical_transformer = StandardScaler()
