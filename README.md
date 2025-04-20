@@ -1,12 +1,22 @@
+# Housing Price Machine Learning Regression Predictor
+## Author: **Nick Elias, Elias Analytics**  
+**Institution**: Northwest Missouri State University  
+*CSIS 44688-80 Applied Machine Learning*  
+#### [Link to Notebook file in GitHub](https://github.com/NickElias01/final-project-applied-ml/blob/main/regression_nickelias.ipynb)
+#### [Link to Peer Review in GitHub](https://github.com/NickElias01/final-project-applied-ml/blob/main/peer_review.md)
+
 ![Row of Houses with For Sale Signs](images/ReadmeImage_ForSaleSign_ChatGPT_Image.png)
 
 ## Table of Contents
-- [Housing Price Predictor](#housing-price-predictor)
-  - [Author](#author)
+- [Housing Price Machine Learning Regression Predictor](#housing-price-machine-learning-regression-predictor)
+  - [Author: **Nick Elias, Elias Analytics**](#author-nick-elias-elias-analytics)
       - [Link to Notebook file in GitHub](#link-to-notebook-file-in-github)
       - [Link to Peer Review in GitHub](#link-to-peer-review-in-github)
+  - [Table of Contents](#table-of-contents)
   - [Project Overview](#project-overview)
     - [Key Features of the Project](#key-features-of-the-project)
+- [Model Performance Comparison](#model-performance-comparison)
+- [Linear Regression Original Pipeline Estimates:](#linear-regression-original-pipeline-estimates)
   - [Repository Structure](#repository-structure)
   - [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
@@ -21,15 +31,6 @@
 
 ---
 
-# Housing Price Predictor
-## Author  
-**Nick Elias, Elias Analytics**  
-**Institution**: Northwest Missouri State University  
-*CSIS 44688-80 Applied Machine Learning*  
-#### [Link to Notebook file in GitHub](https://github.com/NickElias01/final-project-applied-ml/blob/main/regression_nickelias.ipynb)
-#### [Link to Peer Review in GitHub](https://github.com/NickElias01/final-project-applied-ml/blob/main/peer_review.md)
-
----
 
 ## Project Overview  
 This project focuses on predicting housing prices using machine learning techniques applied to a real estate dataset. The analysis involves data preprocessing, feature engineering, and model evaluation to build accurate regression models. The dataset, sourced from the [Kaggle Housing Prices Competition](https://www.kaggle.com/c/house-prices-advanced-regression-techniques), includes various features such as living area, house age, and overall quality, which are used to predict the target variable, `SalePrice`.
@@ -44,6 +45,19 @@ This project focuses on predicting housing prices using machine learning techniq
 - **Outlier Handling**: Removal of extreme values to improve model performance.  
 
 The **Advanced Polynomial Pipeline** achieved the best results, demonstrating the importance of scaling and feature engineering in improving predictive accuracy.
+
+
+# Model Performance Comparison
+
+| Pipeline Description                                                                 | RMSE       | R²     |
+|--------------------------------------------------------------------------------------|------------|--------|
+| **Original Linear Regression** (GrLivArea, HouseAge, OverallQual)                   | 33,146.29  | 0.78   |
+| **Pipeline 1**: Imputer → StandardScaler → Linear Regression                        | 33,146.29  | 0.78   |
+| **Pipeline 2**: Imputer → Polynomial Features (degree=3) → StandardScaler → LR      | 31,613.86  | 0.80   |
+
+
+# Linear Regression Original Pipeline Estimates:
+![Original LR Pipeline Estimates: Actual vs. Predicted](images/Scatterplot_Actual_vs_Predicted_SalePrice.png)
 
 ---
 
