@@ -109,8 +109,6 @@ wheel
 # Environment variables management
  python-dotenv
 
-# Mushroom dataset
-ucimlrepo
 
 # ======================================================
 # TEXT-TO-SPEECH
