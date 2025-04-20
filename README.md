@@ -1,4 +1,4 @@
-![Row of Houses with For Sale Signs](images/houses_for_sale.png)
+![Row of Houses with For Sale Signs](images/ReadmeImage_ForSaleSign_ChatGPT_Image.png)
 
 ## Table of Contents
 - [Housing Price Predictor](#housing-price-predictor)
